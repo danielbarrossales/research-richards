@@ -4,3 +4,6 @@ venv/
 sourceforge.txt
 stackoverflow.txt
 github.txt
+__pycache__/data_util.cpython-37.pyc
+__pycache__/richards.cpython-37.pyc
+__pycache__/statistic_help.cpython-37.pyc
