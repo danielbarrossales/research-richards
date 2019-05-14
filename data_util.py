@@ -1,8 +1,8 @@
 import numpy as np
 
 
-def get_data(programming_language="CSharp", period="month", root_folder="/shared/phd-data/",
-             source="github/programmers/"):
+def get_data(source="github/programmers/", period="month", programming_language="CSharp",
+             root_folder="/shared/phd-data/"):
     """
     :return: return a 2 dimensional array with the content of
     {root_folder+source+period+"/"+programming_language+"_"period+".dat"} file

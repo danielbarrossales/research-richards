@@ -1,5 +1,5 @@
 import numpy as np
-
+from sklearn.metrics import mean_squared_error
 
 def calc_squared_r(residues, real_result):
     ss_res = np.sum(np.power(residues, 2))
@@ -18,3 +18,7 @@ def calc_std_deviation(real_data):
 
 def calc_error_margin(std_deviation, real_data):
     return std_deviation/np.sqrt(len(real_data))*2.56
+
+
+def rmse(y_actual, y_predicted):
+    return np.sqrt(mean_squared_error(y_actual, y_predicted))
